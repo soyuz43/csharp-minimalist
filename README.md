@@ -40,12 +40,15 @@ No ideology—just configuration for engineers who value transparency.
 ## ❌ The Harsh Reality:
 
 - **Telemetry Isn’t Dead**
+    
     We block known endpoints. New ones appear daily. This is trench warfare.
 
 - **NuGet? You’ll Fix It**
+    
     We remove all default feeds. Builds will fail. That’s the point—stop piping code from Redmond like it's tap water.
 
 - **Windows Is a Joke**
+
    If you're on Windows, bring your own xmlstarlet, firewall, and coping mechanism. We’re not your IT department.
 
 
