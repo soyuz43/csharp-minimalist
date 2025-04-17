@@ -37,33 +37,42 @@ No ideology—just configuration for engineers who value transparency.
 
 ---
 
-## ❌ The Harsh Reality:
+## ⚠️ Operational Realities  
 
-- **Telemetry Isn’t Dead**
-    
-    We block known endpoints. New ones appear daily. This is trench warfare.
-
-- **NuGet? You’ll Fix It**
-    
-    We remove all default feeds. Builds will fail. That’s the point—stop piping code from Redmond like it's tap water.
-
-- **Windows Is a Joke**
-
-   If you're on Windows, bring your own xmlstarlet, firewall, and coping mechanism. We’re not your IT department.
+### **Telemetry Requires Vigilance**  
+- We block known Microsoft endpoints. 
+- New telemetry servers emerge frequently.  
 
 
-## 👷 Who Should Use This  
+### **NuGet Feed Management**  
+- Default feeds (`api.nuget.org`) are **removed intentionally**.  
+- Builds fail until you explicitly define trusted sources.  
+- **Rationale:** Avoid implicit reliance on external registries.  
 
-### ✅ Ideal Use Cases  
-- Teams requiring compliance with data sovereignty policies  
-- Developers debugging performance-sensitive or regulated applications  
-- Engineers building air-gapped or firewall-restricted environments  
+### **Windows Limitations**  
+- No automated firewall rule configuration.  
+- Requires manual setup with:  
+  - `xmlstarlet` (modify `.csproj`/`.config` files)  
+  - PowerShell firewall scripting  
+- **Translation:** Windows support assumes sysadmin-level skills.  
 
-### ⚠️ Not Recommended For  
-- Projects needing seamless Microsoft ecosystem integration  
-- Teams unwilling to maintain custom NuGet feeds  
-- Developers unfamiliar with firewall/CLI configuration  
+---
 
+## 👷 Target Audience  
+
+### ✅ Recommended For  
+| Use Case                  | Alignment with Realities               |  
+|---------------------------|----------------------------------------|  
+| Data sovereignty compliance | Explicit feed control + network blocking |  
+| Regulated environments     | Audit-ready via `mitmproxy` captures    |  
+| Air-gapped deployments     | No default NuGet dependency            |  
+
+### ❌ Not Recommended For  
+| Scenario                     | Conflict with Realities               |  
+|------------------------------|---------------------------------------|  
+| Microsoft ecosystem integration | Removed telemetry breaks VS tooling   |  
+| Rapid prototyping            | Manual NuGet config slows iteration   |  
+| GUI-only Windows developers  | Requires CLI/firewall expertise       |  
 ---
 
 ## ⚙️ Usage  
