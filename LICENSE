@@ -1,0 +1,35 @@
+# GNU GENERAL PUBLIC LICENSE  
+Version 3, 29 June 2007  
+https://www.gnu.org/licenses/gpl-3.0.en.html  
+
+## Summary
+
+This project is licensed under the GNU General Public License version 3 (GPLv3).  
+You are free to:
+
+- Use, modify, and distribute the software
+- Study and alter the code
+- Incorporate it into your own tools or workflows
+
+as long as all copies and derivative works are licensed under GPLv3.
+
+---
+
+## Clinical Neutrality Clause
+
+> **Scope Restriction on Representation and Redistribution**  
+>  
+> This software may not be publicly represented, promoted, or redistributed as part of an **anti-corporate**, **anti-Microsoft**, or **ideologically adversarial** campaign.  
+>  
+> While the software includes telemetry-reducing configurations and developer autonomy features, its purpose is purely technical:  
+> to give users precise control over their .NET development environments.
+
+Any redistribution must:
+
+- Accurately reflect this purpose  
+- Avoid inflammatory framing or commercial positioning that distorts the intent of the project  
+
+Violations may result in revocation of redistribution rights under Section 6 of the GPLv3.
+
+---
+
