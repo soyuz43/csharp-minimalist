@@ -79,7 +79,7 @@ No ideology—just configuration for engineers who value transparency.
 
 ### 1. Initialize Environment  
 ```bash  
-git clone https://github.com/your-repo/csharp_minimalist.git  
+git clone https://github.com/soyuz43/csharp_minimalist.git  
 cd csharp_minimalist  
 ./configure.sh --project YOUR_PROJECT.csproj  
 ```  
